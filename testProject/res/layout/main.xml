@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:customView="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" android:background="#D3D3D3"
+            android:paddingTop="10dp">
+        <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/height" android:progress="@integer/start_value_seekbar"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_height" android:textColor="@android:color/black" android:textSize="20dp"
+                android:gravity="center_vertical|center_horizontal" android:text="@string/text_width"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:gravity="center_vertical|center_horizontal" android:id="@+id/linearLayout"
+                  android:background="#D3D3D3" android:paddingTop="10dp" android:paddingBottom="10dp">
+        <SeekBar android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/width"
+                 android:progress="@integer/start_value_seekbar"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/text_width" android:textColor="@android:color/black" android:textSize="20dp"
+                  android:gravity="center_vertical|center_horizontal" android:text="@string/text_height"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+            android:background="#A9A9A9">
+
+        <view android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              customView:percentage_width="50"
+              customView:percentage_height="50"
+
+              class="net.zel.percentage.PercentageButton"
+              android:id="@+id/button"
+              android:text="@string/button_text"
+              android:textSize="24dp"
+              android:textColor="@android:color/white"
+              android:background="#000000"
+              android:gravity="center_vertical|center_horizontal" android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
+

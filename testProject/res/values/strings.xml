@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">testProject</string>
+
+    <integer name="start_value_seekbar" >50</integer>
+
+    <string name="button_text">Button with interest attributes</string>
+    <string name="text_height">element height relative to the parent element -  %1$s percent</string>
+    <string name="text_width">element width relative to the parent element -  %1$s percent</string>
+
+
+</resources>
